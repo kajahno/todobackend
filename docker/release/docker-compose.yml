@@ -22,7 +22,7 @@ app:
     - "--die-on-term"
 
 test:
-  image: todobackend-specs
+  image: kajahno/todobackend-specs
   links:
     - nginx 
   environment:
@@ -62,7 +62,7 @@ db:
     MYSQL_ROOT_PASSWORD: password
 
 agent:
-  image: ansible
+  image: kajahno/ansible
   volumes:
     - ../../ansible/probe.yml:/ansible/site.yml
   links:
