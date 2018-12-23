@@ -3,3 +3,14 @@
 *.pyc
 
 *.sqlite3
+
+coverage.xml
+
+unittests.xml
+
+target
+
+.idea
+
+.vscode
+
