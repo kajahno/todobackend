@@ -23,7 +23,7 @@ builder:
   command: ["pip", "wheel", "--no-index", "-f /build", "."]
 
 agent:
-  image: ansible
+  image: kajahno/ansible
   volumes:
     - ../../ansible/probe.yml:/ansible/site.yml
   links:
