@@ -1,4 +1,4 @@
-FROM todobackend-base:latest
+FROM kajahno/todobackend-base:latest
 MAINTAINER Karl Jahn <kajano@gmail.com>
 
 
