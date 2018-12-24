@@ -8,9 +8,17 @@ coverage.xml
 
 unittests.xml
 
+# Ignore build and test artifacts
 target
+reports
 
 .idea
 
 .vscode
 
+# Ignore test artifacts
+src/.coverage
+src/*.xml
+
+# Ignore eggs
+src/*egg-info
