@@ -1,3 +1,7 @@
+options {
+    ansiColor('xterm')
+}
+
 node {
     checkout scm
     
