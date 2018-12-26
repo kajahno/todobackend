@@ -3,6 +3,10 @@ node {
     
     try {
         stage 'Run unit/integration tests'
+        wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'XTerm']) {
+            sh 'echo ""'
+        }
+        
         sh 'make test'
         
         stage 'Build application artifacts'
